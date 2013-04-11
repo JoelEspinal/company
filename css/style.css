@@ -1,0 +1,413 @@
+@import url(jqueryui.css);
+
+header {
+    width: 100%;
+    height: 35px;
+    padding: 10px 0;
+    background-color: #2C2C2C;
+    background-image: -moz-linear-gradient(top, #333, #222);
+    background-image: -ms-linear-gradient(top, #333, #222);
+    background-image: -webkit-linear-gradient(top, #333, #222);
+    background-image: -o-linear-gradient(top, #333, #222);
+    background-image: linear-gradient(top, #333, #222);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25),inset 0 -1px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+header ul{
+    display: inline;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+header ul li{
+    display: inline;
+    padding: 7px 0 0px 23px;
+    margin-right: 20;
+    text-decoration: none;
+    color: #BFBFBF;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+header ul li a{
+    font-size: 20px;
+}
+body{
+    margin: 0px;
+    background: url(../imgs/background.jpg) repeat-x;
+}
+
+header #home{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+input[type=text]{
+    display: inline-block;
+    height: 18px;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 13px;    
+    line-height: 18px;
+    color: #555;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+select{
+    margin: 4px;
+    margin-left: 15px;
+    display: inline-block;
+    line-height: 18px;
+}
+
+form img{
+    margin-left: 160px;
+}
+
+output{
+    float: left;
+    width: 99%;
+    margin: 30px 0px;
+    padding-left: 1%;
+    min-width: 1000px;
+}
+
+menu{
+    width: 17%;
+    margin: 0px;
+    display: inline;
+    float: left;
+    padding-left: 0px;
+    margin-right: 1%;
+}
+
+menu ul{
+    min-height: 20px;
+    padding: 15px;
+    margin: 0px;
+    background-color: whiteSmoke;
+    border: 1px solid #EEE;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    list-style: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+menu ul li{
+    line-height: 18px;
+    margin: 10px 0;
+}
+
+menu ul li a{
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 15px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #08C;
+    text-decoration: none;
+}
+
+section{
+    display: inline;
+    float: left;
+    width: 81%;
+    min-width: 800px;
+    background-color: whiteSmoke;
+    border: 1px solid #EEE;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+table.form{
+    border-spacing: 0px 1px;
+    margin-top: 20px;
+}
+
+table.list{
+    width: 80%;
+}
+
+.odd{
+	background-color: white;
+}
+
+.even{
+	background-color: whitesmoke;
+}
+
+table.nested{
+    background-color: white;
+    border: solid 1px #ddd;
+}
+
+table.list thead th{
+    background-color: #404040;
+    height: 35px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+table.list tbody td{
+    border-bottom: solid 1px #DDD;
+    height: 35px;
+    padding: 0 5px;
+}
+
+.odd{
+    background-color: whitesmoke;
+}
+
+.dataTables_wrapper{
+    padding-top: 20px;
+}
+
+.dataTables_length, .dataTables_filter{
+    display: inline;
+}
+
+.dataTables_filter{
+    float: right;
+}
+
+.dataTables_info{
+    margin: 20px 0;
+}
+
+table.list tbody tr td:last-child{
+    text-align: right;
+}
+
+.dataTables_paginate{
+    background-color: #404040;
+    height: 35px;
+}
+
+.dataTables_paginate a{
+    line-height: 35px;
+    padding: 8px 15px;
+    color: #08C;
+    border-right: solid 1px white;
+    cursor: pointer;
+}
+
+.dataTables_paginate a.paginate_button_disabled{
+    color: #999;
+}
+
+.dataTables_paginate a.paginate_active {
+    color: #999;
+    background-color: whitesmoke;
+    font-weight: bold;
+}
+
+nav{
+    color: #EEE;
+    width: 100%;
+    height: 35px;
+    background-color: #404040;
+    font-weight: bold;
+}
+
+nav ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 35px;
+}
+
+nav ul li a{
+    padding: 8px 20px;
+}
+
+nav ul li:hover a, nav ul li.active a{
+    color: #555;
+    background-color: white;
+    border: 1px solid #DDD;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
+div.alert{
+    padding: 7px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 900px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #bce8f1;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #d9edf7;
+    color: #3a87ad;
+}
+div.alert .close{
+    position: relative;
+    right: 5px;
+    top: 1px;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 18px;
+    color: black;
+    text-shadow: 0 1px 0 white;
+    text-decoration: none;
+    opacity: 0.2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+form fieldset.login{
+    width: 480px;
+    margin: 0px auto;
+    padding: 10px 0;
+    background-color: whiteSmoke;
+    border: 1px solid #EEE;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+form fieldset.login legend{
+    font-size: 30px;
+    top: -13px;
+    width: 0px;
+    position: relative;
+    text-decoration: underline;
+}
+form .field{
+    padding-top: 10px;  
+}
+
+form .field label{
+    width: 145px;
+    float: left;
+    text-align: right;
+}
+form .field label.gender{
+    width: 45px;
+}
+form .field input{
+    margin-left: 15px;
+}
+
+form .field input[type=submit]{
+    margin-left: 160px;
+    height: 30px;
+    width: 90px;
+}
+
+div.alert.error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+}
+
+div.alert.warning {
+    color: #c09853;
+    background-color: #fcf8e3;
+    border-color: #fbeed5;
+}
+
+div.alert.success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+}
+
+table.form{
+    
+}
+
+table.form td{
+    height: 35px;
+    padding: 0px 5px;
+}
+
+table.form td.label{
+    width: 200px;
+    text-align: right;
+}
+
+table.form td.nested_label{
+    text-align: right;
+}
+
+section form div.actions{
+    padding: 17px 20px 18px 214px;
+    margin-top: 18px;
+    background-color: #eeeeee;
+    border-top: 1px solid #ddd;
+}
+
+a.button, button.button, input.button{
+    display: inline-block;
+    padding: 0px 10px;
+    font-size: 13px;
+    line-height: 30px;
+    height: 30px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+    background-image: linear-gradient(top, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0);
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) fadein(rgba(0,0,0,0.1), 15%);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+a.button{
+    height: 28px;
+}
+
