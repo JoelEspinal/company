@@ -3,6 +3,8 @@
 	include("utils/format.php");
 	include("utils/util.php");
 	include("utils/zodiac.php");
+	include("connections/config.php");
+	include("migrate/schema.php");
 	include("connections/connection.php");
 	include("models/abstract_model.php");
 	include("models/person.php");

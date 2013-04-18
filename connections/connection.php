@@ -1,6 +1,4 @@
 <?php
-	include("config.php");
-	
 	class DB{
 		
 		static $connection = null;
@@ -13,11 +11,13 @@
 				mysql_close($this->connection);
 			}
 		}
-		public static function connect(){	
+		public static function connect(){
 			if(DB::$connection == null){
 				DB::$connection= mysql_connect(host, user, pass);
+				mysql_select_db("information_schema", DB::$connection);
+				mysql_query("CREATE SCHEMA ".db);
 				mysql_select_db(db, DB::$connection);
-				echo mysql_error();
+				DB::createDataBase();
 			}
 		}
 		public static function query($sql){
@@ -30,7 +30,18 @@
 			mysql_query($sql);
 			echo mysql_error();
 		}
+		public static function createDataBase(){
+			global $schema;
+			$error= false;
+			foreach ($schema as $statement){
+				mysql_query($statement);
+				if(mysql_errno()!=0) $error= true;
+			}
+			if (!$error) mysql_query("insert into users(email, password) values('admin@company.com','password');");
+		}
 	}
+	
+	
 	
 	DB::connect();
 ?>
