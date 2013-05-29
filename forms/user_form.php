@@ -15,7 +15,7 @@
 			
 				<input type="hidden" name="id" value="<?php echo isset($user)? $_GET["id"] : "0";?>">
 				<fieldset class="login">
-					<legend>Employee</legend>
+					<legend>User</legend>
 						<div class="field">
 							<label>User Name: </label>
 							<input type="text" name="email" value="<?php echo (isset($user))? $user->__get("email") : ""; ?>">

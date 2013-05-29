@@ -16,9 +16,9 @@
 						 	}
 					 		foreach (array_keys(Person::getFields()) as $name) {	 
 					 			$value= "";
-					 			if(isset($emp)){
+					 			if(isset($emp) && $emp != null){
 					 				$pe= Person::find($emp->__get("person_id"));
-					 				$value= $pe->__get("{$name}");
+					 				if($pe) $value= $pe->__get("{$name}");
 					 			}		
 					 			if ($name == "gender") {
 					 				echo "<div class='field'>
@@ -32,6 +32,7 @@
 					 				echo"<div class='field'><label>" . Format::humanize($name) .
 					 				"</label> <input type='date' name='{$name}'  class='input' value='{$value}'/>
 					 				</div>";
+					 				continue;
 					 			}
 					 			if($name == "id"){
 					 				continue;

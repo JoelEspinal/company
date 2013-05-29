@@ -37,7 +37,7 @@
 				mysql_query($statement);
 				if(mysql_errno()!=0) $error= true;
 			}
-			if (!$error) mysql_query("insert into users(email, password) values('admin@company.com','password');");
+			//if (!$error) mysql_query("insert into users(email, password) values('admin@company.com','password');");
 		}
 	}
 	

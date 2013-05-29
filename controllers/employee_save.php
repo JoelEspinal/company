@@ -47,7 +47,7 @@
 			
 			echo "Person id para guardarse en employee:::: {$person->__get("id")}";
 			
-			
+			// construct($active, $url_img, $code, $title, $salary, $afp, $sca, $isr, $person_id, $superior_id, $id= 0)
 			$employee= new Employee(isset($_POST["active"])? $_POST["active"]: 0, "", $_POST["code"], $_POST["title"], $_POST["salary"], $_POST["afp"], $_POST["sca"], $_POST["isr"], $person->__get("id"), isset($_POST["superior_id"])? $_POST["superior_id"]: 0);
 			$employee->save();
 			

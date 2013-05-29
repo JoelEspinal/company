@@ -15,7 +15,7 @@
 		<?php 
 			if(isset($_SESSION["user_id"])){
 				echo
-					 "<a href='/company/controllers/logout.php' id='logout'>Sing Out</a>";
+					 "<a href='/company/controllers/logout.php' class='logout' id='logout'>Sing Out</a>";
 			}
 		?>
 		</head>
